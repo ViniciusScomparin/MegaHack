@@ -9,7 +9,7 @@ function Login(props) {
       <div className="Margem"></div>
       <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(51)} startIcon={<img src="https://picsum.photos/25/25"/>}>Criar conta usando Facebook</Button>
       <div className="Margem"></div>
-      <p >ou</p>
+      <p>ou</p>
       
       <div className="Alinhamento">
         <Typography >Nome</Typography>

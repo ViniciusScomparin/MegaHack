@@ -1,0 +1,33 @@
+.ImagemPerfil{
+    border-radius: 100px;
+}
+
+.Selo{
+    position: absolute;
+    top: 160px;
+    border-radius: 100px;
+}
+
+.Botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.BotaoConfig{
+    flex-grow: 5;
+}
+
+.VerticalDivider{
+    height: 55px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Margem{
+    margin-top: 6vh;
+}
+

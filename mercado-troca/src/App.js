@@ -5,6 +5,7 @@ import LandingPage from './Components/Pages/LandingPage/LandingPage';
 import CreditCardData from './Components/Pages/CreditCardData/CreditCardData';
 import PersonalData from './Components/Pages/PersonalData/PersonalData';
 import Login from './Components/Pages/Login/Login';
+import Profile from './Components/Pages/Profile/Profile';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <PersonalData ChangePage={ChangePage}/>
+      <Profile ChangePage={ChangePage}/>
     </div>
   );
 }
