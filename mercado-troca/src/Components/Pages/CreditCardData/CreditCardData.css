@@ -1,0 +1,20 @@
+.Container{
+  padding: 24px;
+}
+
+.Margem{
+    margin-bottom: 20px;
+}
+
+.Lado{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.Espaco{
+    width: 20.5px;
+}
+
+
+
