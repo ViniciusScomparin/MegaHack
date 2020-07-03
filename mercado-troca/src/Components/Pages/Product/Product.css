@@ -1,0 +1,74 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 4vh;
+    margin: auto;
+}
+
+.ImageGallery {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 25px;
+    width: 80%;
+}
+
+.ProductData {
+    display: flex;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.TextAlign {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.Overlay{
+    position: relative;
+    top: 10px;
+}
+
+.RoundedImg {
+    border-radius: 10%;
+}
+
+.MainImage {
+    background-color: #c4c4c4;
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.VendorProfile{
+    display: flex;
+}
+
+.VendorInfo{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.VerticalDivider{
+    height: 75px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
