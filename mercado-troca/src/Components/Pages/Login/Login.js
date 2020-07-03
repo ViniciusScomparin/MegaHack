@@ -5,9 +5,9 @@ import './Login.css';
 function Login(props) {
   return (
     <div className="Container">
-      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(51)} startIcon={<img src="https://picsum.photos/25/25"/>}>Criar conta usando Google</Button>
+      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(1)} startIcon={<img src="https://picsum.photos/25/25"/>}>Criar conta usando Google</Button>
       <div className="Margem"></div>
-      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(51)} startIcon={<img src="https://picsum.photos/25/25"/>}>Criar conta usando Facebook</Button>
+      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(1)} startIcon={<img src="https://picsum.photos/25/25"/>}>Criar conta usando Facebook</Button>
       <div className="Margem"></div>
       <p >ou</p>
       
@@ -31,7 +31,7 @@ function Login(props) {
       </div>
       
       <div className="Margem"></div>
-      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(51)}>Cadastrar-me</Button>
+      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(2)}>Cadastrar-me</Button>
       <div className="Margem"></div>
       <Typography>Ver o contrato do <a href="https://www.google.com.br">Mercado Troca.</a></Typography>
       

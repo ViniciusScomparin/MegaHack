@@ -5,11 +5,11 @@ import CameraAltOutlinedIcon from '@material-ui/icons/CameraAltOutlined';
 
 function landingPage(props) {
   return (
-    <div>
-        <img src="https://picsum.photos/150/100"></img>
+    <div style={{display:"flex", flexDirection:"column", justifyContent:"space-evenly", height:"80%", width:"90%", margin:"auto"}}>
+        <img src="https://picsum.photos/200/200"></img>
         <Divider/>
         <Typography>Selecione as fotos do produto que deseja trocar e monte agora <b>sua galeria</b></Typography>
-        <Button variant='contained' color='primary' fullWidth='true' onClick={() => props.ChangePage(51)} startIcon={<CameraAltOutlinedIcon/>}>Criar galeria</Button>
+        <Button variant='contained' color='primary' fullWidth='true' onClick={() => props.ChangePage(8)} startIcon={<CameraAltOutlinedIcon/>}>Criar galeria</Button>
     </div>
   );
 }

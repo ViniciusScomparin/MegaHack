@@ -1,12 +1,15 @@
 import React ,{useState, useEffect} from 'react';
 import { Button, TextField } from '@material-ui/core';
+import BackHeader from '../../AddOns/Header/BackHeader'
+
 import './CreditCardData.css';
 
 
 function CreditCardData(props) {
   return (
     <div className="Container">
-    
+      <BackHeader Title="Cartão de crédito/débito" Back={2} ChangePage={props.ChangePage}/>
+      <div className="Margem"></div>
       <TextField fullWidth='true' label="Número do Cartão" value="XXXX XXXX XXXX XXXX"></TextField>
       <div className="Margem"></div>
 
@@ -23,7 +26,7 @@ function CreditCardData(props) {
       <div className="Margem"></div>
       <TextField fullWidth='true' label="Telefone" value="(XX) XXXX-XXXX"></TextField>
       <div className="Margem"></div>
-      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(51)}>Salvar</Button>
+      <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(4)}>Salvar</Button>
     </div>
   );
 }
