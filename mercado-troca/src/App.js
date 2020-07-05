@@ -12,9 +12,11 @@ import EditGallery from './Components/Pages/EditGallery/EditGallery'
 import Product from './Components/Pages/Product/Product'
 import Profile from './Components/Pages/Profile/Profile'
 import ExchangeWindow from './Components/Pages/ExchangeWindow/ExchangeWindow'
+import InChat from './Components/Pages/InChat/InChat'
+import Chat from './Components/Pages/Chat/Chat'
 
 function App() {
-  const [page, setPage] = useState(12);
+  const [page, setPage] = useState(11);
   
   const ChangePage = (index) => {
     setPage(index);
@@ -46,8 +48,10 @@ function App() {
       case 10:
         return <Product ChangePage={ChangePage}/>;
       case 11:
-        return <h1>Chat</h1>;
+        return <Chat ChangePage={ChangePage}/>//<div><h1>Chat</h1><button onClick={() => ChangePage(6)}>back</button>< button>forward</button></div>;
       case 12:
+        return <InChat ChangePage={ChangePage}/>;
+      case 13:
         return <ExchangeWindow ChangePage={ChangePage}/>;
     }
   }

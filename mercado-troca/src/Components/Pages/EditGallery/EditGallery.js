@@ -4,6 +4,7 @@ import './EditGallery.css'
 
 import {Button, TextField, Typography, AppBar, Tabs, Tab} from '@material-ui/core';
 import PropTypes from 'prop-types';
+import photo from '../../../Imagens/lo.png'
 
 function EditGallery(props) {
   const [value, setValue] = useState(0);

@@ -10,12 +10,14 @@ import conf from '../../../Arquivos/conf.svg'
 import camera from '../../../Arquivos/camera.svg'
 import perfil from '../../../Arquivos/perfil.svg'
 
+import photo from '../../../Imagens/lo.png'
+
 function Profile(props) {
   return (
     <div>
       <Header ChangePage={props.ChangePage} index='profile'/>
       <br/>
-      <img className="ImagemPerfil" src="https://picsum.photos/190/190"></img>
+      <img className="ImagemPerfil" src={photo}></img>
       <img className="Selo" src={selo} width="50px"></img>
       
       <h3>Ana Clara Machado</h3>

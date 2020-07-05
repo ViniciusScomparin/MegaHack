@@ -19,7 +19,7 @@ function Header(props) {
       <div style={{display:"flex", justifyContent:"space-around", alignItems:"center"}}>
         <input type='image' onClick={() => props.ChangePage(6)} src={props.index === 'profile'? profile_active: profile} style={{marginTop:"15px", width:"20%"}}/>
         <input type='image' onClick={() => props.ChangePage(9)} src={props.index === 'recycle'? recycle_active: recycle} style={{marginTop:"15px", width:"20%"}}/>
-        <input type='image' onClick={() => alert("pagina não implementada")} src={props.index === 'chat'? chat_active: chat} style={{marginTop:"15px", width:"20%"}}/>
+        <input type='image' onClick={() => props.ChangePage(11)} src={props.index === 'chat'? chat_active: chat} style={{marginTop:"15px", width:"20%"}}/>
       </div>
       <div style={{marginBottom:"10px"}} />
       <Divider/>

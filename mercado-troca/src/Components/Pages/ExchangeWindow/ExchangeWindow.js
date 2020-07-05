@@ -7,34 +7,35 @@ import { Button, Typography, Icon, Divider } from '@material-ui/core';
 import CachedIcon from '@material-ui/icons/Cached';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 
+import bota from '../../../Imagens/bota.png'
+import item2 from '../../../Imagens/item2.png'
+import item3 from '../../../Imagens/item3.png'
+import item4 from '../../../Imagens/item4.png'
+
 function ExchangeWindow(props) {
   const [deliverCode, setDeliverCode] = useState('XXX.XXX.XXX-XX');
-  const [one, setOne] = useState(false);
-  const [two, setTwo] = useState(false);
-  const [three, setThree] = useState(false);
-  const [four, setFour] = useState(false);
   
   return (
     <div>
-        <BackHeader Title="Efetuar trocar" Back={11} ChangePage={props.ChangePage}/>
+        <BackHeader Title="Efetuar trocar" Back={12} ChangePage={props.ChangePage}/>
         <br/>
         <div style={{width:"90%", margin:'auto'}}>    
             <Typography align='left' color='textSecondary' variant="subtitle2">Selecione os seus produtos para troca:</Typography>
             <div style={{width:"100%", display:'flex', justifyContent:'space-between'}}>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/100/100" width='100%' height='100%'></img>   
+                <img src={bota} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/100/99" width='100%' height='100%'></img>   
+                <img src={item2} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/100/101" width='100%' height='100%'></img>   
+                <img src={item3} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/101/100" width='100%' height='100%'></img>   
+                <img src={item4} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
             </div>
@@ -42,23 +43,23 @@ function ExchangeWindow(props) {
             <div style={{marginTop:'20px', marginBottom:'20px'}}/>
             <CachedIcon size='large'/>
             <div style={{marginTop:'20px', marginBottom:'20px'}}/>
-            
+
             <Typography align='left' color='textSecondary' variant="subtitle2">Selecione os seus produtos para troca:</Typography>
             <div style={{width:"100%", display:'flex', justifyContent:'space-between'}}>
             <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/100/103" width='100%' height='100%'></img>   
+                <img src={bota} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/99/99" width='100%' height='100%'></img>   
+                <img src={item2} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/101/101" width='100%' height='100%'></img>   
+                <img src={item3} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
               <div style={{position: "relative", width: '22%', height: '22%', float: 'left', marginLeft: '0px'}}>
-                <img src="https://picsum.photos/101/102" width='100%' height='100%'></img>   
+                <img src={item4} width='100%' height='100%'></img>   
                 <input type='checkbox' style={{position:'absolute', bottom: '5px', right:'0px'}}/>
               </div>
             </div>

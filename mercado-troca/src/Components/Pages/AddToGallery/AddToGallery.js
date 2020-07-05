@@ -5,6 +5,8 @@ import './AddToGallery.css'
 import {Button, TextField, Typography, AppBar, Tabs, Tab} from '@material-ui/core';
 import PropTypes from 'prop-types';
 
+import bota from '../../../Imagens/bota.png'
+
 function EditGallery(props) {
   const [value, setValue] = React.useState(0);
 
@@ -16,10 +18,10 @@ function EditGallery(props) {
     return (
       <div style={{width:"90%", margin:"auto"}}>
         <div style={{display:"flex", marginTop:"30px"}}>
-          <img src="https://picsum.photos/200/200"></img>
+          <img src={bota}></img>
           <div>
-            <img src="https://picsum.photos/150/100"></img>
-            <img src="https://picsum.photos/150/100"></img>
+            <img src={bota}></img>
+            <img src={bota}></img>
           </div>
         </div>
         <div className="MargingBotton"/>
