@@ -1,12 +1,47 @@
 import React ,{useState, useEffect} from 'react';
+import Header from '../../AddOns/Header/Header';
+
+import { Button, TextField, Divider, Typography } from '@material-ui/core';
+import './Profile.css';
+
+import selo from '../../../Arquivos/selo.svg'
+import logo from '../../../Arquivos/logo.png'
+import conf from '../../../Arquivos/conf.svg'
+import camera from '../../../Arquivos/camera.svg'
+import perfil from '../../../Arquivos/perfil.svg'
 
 function Profile(props) {
   return (
     <div>
-        <img src="https://picsum.photos/150/100"></img>
-        <div></div>
-        <p>Selecione as fotos do produto que deseja trocar e monte agora <b>sua galeria</b></p>
-        <button onClick={() => props.ChangePage(51)}><img src="https://picsum.photos/30/30"/><p>Criar galeria</p></button>
+      <Header ChangePage={props.ChangePage} index='profile'/>
+      <br/>
+      <img className="ImagemPerfil" src="https://picsum.photos/190/190"></img>
+      <img className="Selo" src={selo} width="50px"></img>
+      
+      <h3>Ana Clara Machado</h3>
+      <h5>Diamond</h5>
+      <br/>
+      <Divider/>
+      <div className="Botao">
+        <div>
+          <img src={conf} width="90px" onClick={() => alert("pagina não implementada")}/>
+          <p>Configurações</p>
+        </div>
+        <div className="VerticalDivider"/>
+        <div>
+          <img src={camera} width="90px" onClick={() => props.ChangePage(8)}/>
+          <p>Editar Galeria</p>
+        </div>
+        <div className="VerticalDivider"/>
+        <div>
+          <img src={perfil} width="90px" onClick={() => props.ChangePage(10)}/>
+          <p>Visualizar</p>
+        </div>
+      </div>
+      
+      <Divider/>
+      <br/>
+      <img className="Margem" src={logo} width='170px'></img>
     </div>
   );
 }

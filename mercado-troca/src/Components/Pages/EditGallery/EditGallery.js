@@ -6,20 +6,28 @@ import {Button, TextField, Typography, AppBar, Tabs, Tab} from '@material-ui/cor
 import PropTypes from 'prop-types';
 
 function EditGallery(props) {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
+  const [product, setProduct] = useState({});
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  const GetRandomNumber = () => {
+    const min = 200;
+    const max = 400;
+    console.log(Math.floor(min + Math.random() * (max - min)));
+    return Math.floor(min + Math.random() * (max - min));
+  }
+
   const RenderPanel = () => {
     return (
       <div style={{width:"90%", margin:"auto"}}>
         <div style={{display:"flex", marginTop:"30px"}}>
-          <img src="https://picsum.photos/200/200"></img>
+          <img src={"https://picsum.photos/" + GetRandomNumber() + "/" + GetRandomNumber()} width="200px" height="200px"></img>
           <div>
-            <img src="https://picsum.photos/150/100"></img>
-            <img src="https://picsum.photos/150/100"></img>
+            <img src={"https://picsum.photos/" + GetRandomNumber() + "/" + GetRandomNumber()} width="150px" height="97px"></img>
+            <img src={"https://picsum.photos/" + GetRandomNumber() + "/" + GetRandomNumber()} width="150px" height="98px"></img>
           </div>
         </div>
         <div className="MargingBotton"/>
@@ -43,14 +51,14 @@ function EditGallery(props) {
             **Procure estimar correramente o peso do seu produto para não haver problemas na hora do envio.</Typography>
         </div>
         <div className="MargingBotton"/>
-        <Button variant='contained' color='primary' fullWidth='true' onClick={() => props.ChangePage(51)}>Criar galeria</Button>
+        <Button variant='contained' color='primary' fullWidth='true' onClick={() => alert("mudança de itens, nao implementada")}>Criar galeria</Button>
       </div>
     )
   }
 
   return (
     <div style={{width:"100%"}}>
-      <BackHeader Title="Editar Galeira" Back={4} ChangePage={props.ChangePage}/>
+      <BackHeader Title="Editar Galeira" Back={6} ChangePage={props.ChangePage}/>
         <div style={{width:"100%"}}>
         <Tabs value={value} onChange={handleChange}>
           <Tab style={{ minWidth: "0px", width: "25%"}} label="01"/>
