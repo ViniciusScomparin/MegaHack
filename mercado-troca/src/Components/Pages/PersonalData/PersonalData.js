@@ -1,10 +1,14 @@
 import React ,{useState, useEffect} from 'react';
 import { Button, TextField } from '@material-ui/core';
+import BackHeader from '../../AddOns/Header/BackHeader'
+
 import './PersonalData.css'; 
 
 function PersonalData(props) {
   return (
     <div className="Container">
+        <BackHeader Title="Dados Pessoais" Back={1} ChangePage={props.ChangePage}/>
+        <div className="Margem"></div>
         <TextField fullWidth='true' label="Nome" value="Ana Clara Machado"></TextField>
         <div className="Margem"></div>
         <TextField fullWidth='true' label="E-mail" value="anaclaramachado@gmail.com"></TextField>
@@ -37,7 +41,7 @@ function PersonalData(props) {
         
 
         <div className="Margem"></div>
-        <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(51)}>Salvar</Button>
+        <Button variant="contained" color="primary" fullWidth='true' onClick={() => props.ChangePage(3)}>Salvar</Button>
     </div>
   );
 }

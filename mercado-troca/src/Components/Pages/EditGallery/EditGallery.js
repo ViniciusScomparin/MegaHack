@@ -50,8 +50,8 @@ function EditGallery(props) {
 
   return (
     <div style={{width:"100%"}}>
-      <BackHeader Title='Editar Galeria'></BackHeader>
-      <div style={{width:"100%"}}>
+      <BackHeader Title="Editar Galeira" Back={4} ChangePage={props.ChangePage}/>
+        <div style={{width:"100%"}}>
         <Tabs value={value} onChange={handleChange}>
           <Tab style={{ minWidth: "0px", width: "25%"}} label="01"/>
           <Tab style={{ minWidth: "0px", width: "25%"}} label="02"/>
