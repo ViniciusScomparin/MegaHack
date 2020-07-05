@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default class SimpleRestAPI { 
     constructor(base_URL){
-        this.BASE_URL = '';
+        this.BASE_URL = 'https://mercado-troca.herokuapp.com';
     }
 
     GetData(params, callback){
