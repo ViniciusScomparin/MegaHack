@@ -11,6 +11,9 @@ import InfoIcon from '@material-ui/icons/Info';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
+import fechar from '../../../Arquivos/fechar.png'
+import trocar from '../../../Arquivos/trocar.png'
+
 function Product(props) {
   const [value, setValue] = React.useState(0);
   const [info, setInfo] = React.useState(0);
@@ -70,7 +73,7 @@ function Product(props) {
 
   return (
     <div>
-      <Header/>
+      <Header ChangePage={props.ChangePage} />
       <div>
         <div className='Overlay'>
           <button onClick={() => SetImage(0)} style={{width:"25%", backgroundColor:(value===0)? 'white' : 'grey', border:"none"}}></button>
@@ -102,12 +105,10 @@ function Product(props) {
       </div>
 
       <div className="Buttons">
-        <IconButton aria-label="reject" color="primary" style={{backgroundColor:"red"}}>
-          <HighlightOffIcon />
-        </IconButton>
-        <IconButton aria-label="accept" variant='contained' color="primary" style={{backgroundColor:"green"}}>
-          <CachedIcon />
-        </IconButton>
+        <button className='ActionButtonRed'>
+          <img src={fechar} style={{width:"40px"}}/></button>
+        <button className='ActionButtonGreen'>
+          <img src={trocar} style={{width:"50px"}}/></button>
       </div>
     </div>
   );

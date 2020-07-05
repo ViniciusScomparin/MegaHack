@@ -1,4 +1,5 @@
 import React ,{useState, useEffect} from 'react';
+import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import './App.css';
 
 import LandingPage from './Components/Pages/LandingPage/LandingPage';
@@ -9,7 +10,7 @@ import EditGallery from './Components/Pages/EditGallery/EditGallery'
 import Product from './Components/Pages/Product/Product'
 
 function App() {
-  const [page, setPage] = useState(9);
+  const [page, setPage] = useState(4);
   
   const ChangePage = (index) => {
     setPage(index);
@@ -39,11 +40,21 @@ function App() {
     }
   }
 
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: "#0A8B0D"
+      }
+    }
+  })
+
   return (
     <div style={{width:"100vw", height:"100%", backgroundColor:"lightgrey"}}>
-      <div className="App">
-        {GetCurrentPage()}
-      </div>
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          {GetCurrentPage()}
+        </div>
+      </ThemeProvider>
     </div>
   );
 }
