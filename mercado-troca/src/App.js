@@ -16,7 +16,7 @@ import InChat from './Components/Pages/InChat/InChat'
 import Chat from './Components/Pages/Chat/Chat'
 
 function App() {
-  const [page, setPage] = useState(11);
+  const [page, setPage] = useState(0);
   
   const ChangePage = (index) => {
     setPage(index);
@@ -48,7 +48,7 @@ function App() {
       case 10:
         return <Product ChangePage={ChangePage}/>;
       case 11:
-        return <Chat ChangePage={ChangePage}/>//<div><h1>Chat</h1><button onClick={() => ChangePage(6)}>back</button>< button>forward</button></div>;
+        return <Chat ChangePage={ChangePage}/>
       case 12:
         return <InChat ChangePage={ChangePage}/>;
       case 13:
