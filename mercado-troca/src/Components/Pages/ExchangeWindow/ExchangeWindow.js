@@ -102,7 +102,7 @@ function ExchangeWindow(props) {
                 <div style={{marginTop:'20px', marginBottom:'40px'}}/>
             <Typography align='center' color='textSecondary' variant="subtitle2">Clique em confirmar para finalizar a troca</Typography>
                 <div style={{marginTop:'20px', marginBottom:'20px'}}/>
-           <Button variant='contained' color='primary' fullWidth='true' onClick={() => alert("Troca feita com sucesso")}><p>Finalizar Compra</p></Button>
+           <Button variant='contained' color='primary' fullWidth='true' onClick={() => props.ChangePage(11)}><p>Finalizar Troca</p></Button>
         </div>
     </div>
   );

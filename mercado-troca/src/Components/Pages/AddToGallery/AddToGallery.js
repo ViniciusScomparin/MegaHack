@@ -18,11 +18,7 @@ function EditGallery(props) {
     return (
       <div style={{width:"90%", margin:"auto"}}>
         <div style={{display:"flex", marginTop:"30px"}}>
-          <img src={bota}></img>
-          <div>
-            <img src={bota}></img>
-            <img src={bota}></img>
-          </div>
+          <img src={bota} width='100%' margin='auto'></img>
         </div>
         <div className="MargingBotton"/>
         <div>
