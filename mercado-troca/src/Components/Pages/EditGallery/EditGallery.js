@@ -4,7 +4,6 @@ import './EditGallery.css'
 
 import {Button, TextField, Typography, AppBar, Tabs, Tab} from '@material-ui/core';
 import PropTypes from 'prop-types';
-import photo from '../../../Imagens/lo.png'
 
 function EditGallery(props) {
   const [value, setValue] = useState(0);
@@ -52,7 +51,7 @@ function EditGallery(props) {
             **Procure estimar correramente o peso do seu produto para não haver problemas na hora do envio.</Typography>
         </div>
         <div className="MargingBotton"/>
-        <Button variant='contained' color='primary' fullWidth='true' onClick={() => alert("mudança de itens, nao implementada")}>Criar galeria</Button>
+        <Button variant='contained' color='primary' fullWidth='true' onClick={() => props.ChangePage(6)}>Criar galeria</Button>
       </div>
     )
   }
